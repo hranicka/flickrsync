@@ -33,7 +33,7 @@ UPLOAD_TAGS = [
     UPLOAD_ALBUM,
 ]
 
-opts, args = getopt.getopt(sys.argv[2:], "t:", ["tags"])
+opts, args = getopt.getopt(sys.argv[2:], "t:", ["tags="])
 for o, a in opts:
     if o in ("-t", "--tags"):
         UPLOAD_TAGS += a.split(',')
